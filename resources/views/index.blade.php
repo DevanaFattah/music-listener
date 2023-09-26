@@ -7,6 +7,6 @@
     <title>Ambasing</title>
 </head>
 <body>
-        
+    @include('partials.sidebar')
 </body>
 </html>
