@@ -8,5 +8,11 @@
 </head>
 <body>
     @include('partials.sidebar')
+
+    @foreach($recents as $recent)
+
+        <p>{{ $recent }}</p>
+
+    @endforeach
 </body>
 </html>

@@ -1,10 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AlbumController;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Web RoutesAlbu
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -13,10 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-// Route::get('/', function (){
-//     return view('index');
+// Route::get('/', function () {
+//     return view('welcome');
 // });
+
+Route::middleware(['web'])->group(function () {
+
+    //Main Page
+    Route::get('/', [AlbumController::class, 'index'])->name('main.index');
+
+    
+});
