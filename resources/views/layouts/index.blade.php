@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    @vite('resources/css/app.css')
     <title>Ambasing</title>
 </head>
 <body>
-    @include('partials.sidebar')
+    <div class="app-container flex flex-row">
 
-    @foreach($recents as $recent)
+        @yield('content')
 
-        <p>{{ $recent }}</p>
-
-    @endforeach
+    </div>
 </body>
 </html>

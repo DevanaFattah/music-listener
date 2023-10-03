@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --systemPrimary: rgba(0,0,0,.88);
+    --systemPrimary-vibrant: #1d1d1f;
+    --systemPrimary-onLight: rgba(0,0,0,.88);
+    --systemPrimary-onDark: hsla(0,0%,100%,.92);
+    --systemSecondary: rgba(0,0,0,.56);
+    --systemSecondary-vibrant: rgba(0,0,0,.56);
+    --systemSecondary-onLight: rgba(0,0,0,.56);
+    --systemSecondary-onDark: hsla(0,0%,100%,.64);
+    --systemTertiary: rgba(0,0,0,.48);
+    --systemTertiary-vibrant: rgba(0,0,0,.48);
+    --systemTertiary-onLight: rgba(0,0,0,.48);
+    --systemTertiary-onDark: hsla(0,0%,100%,.4);
+    --keyColor: #d60017;
+    --keyColor-rgb: 214,0,23;
+    --keyColor-rollover: #a20000;
+    --keyColor-rollover-rgb: 162,0,0;
+    --keyColor-pressed: #b00;
+    --keyColor-pressed-rgb: 187,0,0;
+    --keyColor-deepPressed: #a20000;
+    --keyColor-deepPressed-rgb: 162,0,0;
+    --keyColor-disabled: rgba(214,0,23,.25);
+    --segmentedControlSelectedText: rgba(0,0,0,.88);
+    --musicKeyColor: #d60017;
+    --musicKeyColor-rollover: #a20000;
+    --musicKeyColor-pressed: #b00;
+    --musicKeyColor-deepPressed: #a20000;
+    --musicKeyColor-disabled: rgba(214,0,23,.25);
+    --keyColorBG: #d60017;
+    --selectionColor: #d60017;
+}
+
+body {
+    color: hsla(0,0%,100%,.92);
+    /* font-size: 13px; */
+    /* font-style: normal; */
+    /* font-weight: 400; */
+    /* letter-spacing: 0; */
+    /* line-height: 1.23077; */
+}

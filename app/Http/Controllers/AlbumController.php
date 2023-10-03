@@ -19,7 +19,7 @@ class AlbumController extends Controller
             ->take(2)
             ->get();
 
-            return view('index', [
+            return view('pages.main', [
                 'recents' => $recents
             ]);
         }
